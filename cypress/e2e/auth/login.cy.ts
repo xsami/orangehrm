@@ -8,10 +8,6 @@ describe('login spec', () => {
     cy.get('div[role="alert"]', { timeout: 1000 }).should('contain', 'Invalid credentials');
   })
 
-
-  // TODO: Add elements that must live in the login page
-
-
   // Test login as administrator
   it('Login as administrator', () => {
     cy.loginAsAdmin();

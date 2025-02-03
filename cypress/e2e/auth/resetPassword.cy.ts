@@ -8,5 +8,6 @@ describe('Reset password spec', () => {
 
         // will redirect. we need to validate the message in the screen.
         cy.get('h6').should('contain', 'Reset Password link sent successfully');
+        cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/sendPasswordReset')
     })
 })
