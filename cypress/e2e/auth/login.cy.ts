@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const USER_API = 'https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/employees/time-at-work*';
+
 describe('login spec', () => {
 
   // Test failed to login
@@ -11,6 +13,12 @@ describe('login spec', () => {
   // Test login as administrator
   it('Login as administrator', () => {
     cy.loginAsAdmin();
+
+    cy.intercept('GET', USER_API).as('userApi');
+    cy.wait('@userApi').then((response) => {
+      expect(response?.response?.statusCode).to.equal(200);
+    });
+
   });
 
 })
