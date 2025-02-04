@@ -11,5 +11,7 @@ Cypress.Commands.add('loginAsAdmin', () => {
 
     cy.fixture('admin_user').then(({username, password}) => {
         cy.login(username, password);
+        // Validate when login first screen should be dashboard
+        cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
     });
 });
