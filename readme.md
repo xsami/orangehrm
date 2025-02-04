@@ -15,7 +15,7 @@ To install and run the project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/orangehrm.git
+    git clone https://github.com/xsami/orangehrm.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -78,4 +78,4 @@ We welcome contributions to improve the project. To contribute, please follow th
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any questions or support, please contact [your email address].
+For any questions or support, please contact elsam1702@gmail.com
