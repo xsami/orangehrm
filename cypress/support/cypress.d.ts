@@ -8,5 +8,6 @@ declare namespace Cypress {
        */
       login(username: string, password: string): Chainable<void>;
       loginAsAdmin(): Chainable<void>;
+      waitLoading(): Chainable<void>;
     }
   }

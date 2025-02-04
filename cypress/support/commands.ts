@@ -15,3 +15,7 @@ Cypress.Commands.add('loginAsAdmin', () => {
         cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
     });
 });
+
+Cypress.Commands.add('waitLoading', () => {
+    cy.get('.oxd-loading-spinner').should('not.be.visible');
+});
